@@ -1,8 +1,9 @@
 # all the imports
 import os
 import sqlite3
+import flask
 from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash
+     render_template, flash, send_file
 
 """ ---------------- ---------------- App Init ---------------- ---------------- """
 # create our little application :)
@@ -98,8 +99,38 @@ def get_next_row(currentTable):
 @app.route('/')
 def dashboard():
     return render_template('dashboard.html')
-    
+
+
+#Display Data - Pictures
+@app.route('/pictures')
+def dashboard2():
+    filename = 'templates\\pictures\\aaa.jpg'
+    return send_file(filename, mimetype='image/jpg')
+
 """ ---------------- ---------------- List Parts ---------------- ---------------- """
+#Page for Uploading Pictures for Inventory Item Group
+@app.route('/item_picture_upload')
+def pcparts_listX():
+        sql_string = open('sql/select_all_pcparts.sql', 'r').read()
+        db = get_db()
+        cur = db.execute(sql_string)
+        items = cur.fetchall()
+        abc = db.execute('PRAGMA foreign_keys')
+        abcX = abc.fetchall()
+        print("FOREIGN KEY STATUS:")
+        print(abcX)
+        print("-----------------------")
+        abc = db.execute('PRAGMA foreign_keys=ON')
+        abc = db.execute('PRAGMA foreign_keys')
+        abcY = abc.fetchall()
+        print("FOREIGN KEY STATUS:")
+        print(abcY)
+        print("-----------------------")
+        #Display the page
+        #   items ==> list of columns and respective rows for all PC parts
+        return render_template('pcparts_list.html', items=items)
+
+
 #Select all parts and display webpage
 @app.route('/pcparts_list')
 def pcparts_list():

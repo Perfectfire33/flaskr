@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('submit_item') }}" enctype=multipart/form-data method=post class=add-item>
+      <dl>
+        <dt>Item Group Name:
+        <dd><input type=text style='width:92%' name=item__group_name>
+        <dt>Item Subtitle:
+     </dl>
+    </form>
+  {% endif %}
+  <ul class=items>
+  {% for item in items %}
+    <li><h2>{{ item.item_name }}</h2>{{ item.item_subtitle|safe }}
+    {{ item.item_desc|safe }}
+    {{ item.item_category|safe }}
+    {{ item.item_condition|safe }}
+    {{ item.item_conditionDesc|safe }}
+    {{ item.item_cost|safe }}
+  {% else %}
+    <li><em>No Items Found!</em>
+  {% endfor %}
+  </ul>
+{% endblock %}
