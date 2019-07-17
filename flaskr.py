@@ -1,6 +1,7 @@
 # all the imports
 import os
 import sqlite3
+import image_cmd
 import flask
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, send_file
@@ -93,7 +94,10 @@ def get_next_row(currentTable):
     cur = db.execute(sql_string)
     row_count = cur.fetchone()
     return row_count
-    
+
+#Route help
+#https://gist.github.com/haraonline/58408d879abdef1ebe1e8a54c03b1201
+
 """ ---------------- ---------------- Main Routes ---------------- ---------------- """
 #Display Data - Dashboard
 @app.route('/')
@@ -102,9 +106,10 @@ def dashboard():
 
 
 #Display Data - Pictures
-@app.route('/pictures')
-def dashboard2():
-    filename = 'templates\\pictures\\aaa.jpg'
+@app.route('/pictures/<string:folder_name>/<string:photo_filename>', methods=['GET'])
+def get_photo_url(folder_name, photo_filename):
+    #picture_url_list = image_cmd.create_url()
+    filename = 'templates\\pictures\\' + folder_name + '\\' + photo_filename
     return send_file(filename, mimetype='image/jpg')
 
 """ ---------------- ---------------- List Parts ---------------- ---------------- """
