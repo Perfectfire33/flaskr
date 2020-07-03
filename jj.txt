@@ -1,0 +1,6 @@
+ /w 
+ whisper
+ /s
+ say
+ /g 
+ guild
