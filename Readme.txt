@@ -6,3 +6,8 @@ flask initdb
 
 then start server:
 flask run -h 127.0.0.1 -p 5000
+
+username for testing is:
+admin
+password for 'admin' user is:
+testing
