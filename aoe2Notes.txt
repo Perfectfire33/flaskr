@@ -1,0 +1,35 @@
+Player 2 (Red) Currently Tested and Working as Original AI, Franks
+Use "Standard" Resources
+1 Hour In ~ Get Hero ~ Level Up Do Quests
+All Players Research Wheelbarrow ~ Gain 2000 Stone
+All Players Research Stone Mining ~ Gain 2000 Stone
+All Players Research Bodkin Arrow ~ Gain 2000 Stone
+All Players Research Gold Mining ~ Gain 2000 Gold
+All Players Research Chemistry ~ Gain 8000 Stone
+
+22 Levels!
+Levels 1-5 ~ Slower
+Levels 6-10 ~ Harder
+Levels 11-15 ~ Higher Quantity and Frequency
+Levels 13 ~ Fast
+Levels 16-20 and 22 ~ Attack
+Levels 9, 11 and 21 ~ High HP
+
+
+
+Player 2 (Red) Currently Tested and Working as Original AI, Franks
+Use "Standard" Resources
+1 Hour In  Get Hero  Level Up Do Quests
+All Players Research Wheelbarrow  Gain 2000 Stone
+All Players Research Stone Mining  Gain 2000 Stone
+All Players Research Bodkin Arrow  Gain 2000 Stone
+All Players Research Gold Mining  Gain 2000 Gold
+All Players Research Chemistry  Gain 8000 Stone
+
+22 Levels
+Levels 1 to 5  Slower
+Levels 6 to 10  Harder
+Levels 11 to 15  Higher Quantity and Frequency
+Levels 13  Fast
+Levels 16 to 20 and 22  Attack
+Levels 9, 11 and 21  High HP
