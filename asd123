@@ -1,0 +1,13 @@
+Date: 2022-01-07 11:04:53
+ID: 1
+Error occured in: Global
+Count: 1
+Message: ..\AddOns\CT_MapMod\CT_MapMod.lua line 70:
+   hooksecurefunc(): FlightMap_LoadUI is not a function
+Debug:
+   [string "=[C]"]: hooksecurefunc()
+   [string "@CT_MapMod\CT_MapMod.lua"]:70: Initialize()
+   [string "@CT_MapMod\CT_MapMod.lua"]:1662: update()
+   [string "@CT_Library\CT_Library.lua"]:647: eventFuncs()
+   [string "@CT_Library\CT_Library.lua"]:713:
+      CT_Library\CT_Libr
