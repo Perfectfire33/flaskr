@@ -1,2 +1,0 @@
- of projects where people have turned a Pi4 into a RAID enabled NAS.
-However, instead of a NAS, I'm looking to create RAIDed direct attached storage, since I only ever want one computer to use the storage - there isn't any need for any device to access the files direct (other than the machine it's plugged into), since it's my media centre.
