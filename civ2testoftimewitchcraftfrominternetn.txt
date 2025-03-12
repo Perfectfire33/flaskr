@@ -1,0 +1,4 @@
+Magical Incantation
+Requires: Elemental Energy, Eldritch Lore
+Allows: Summon Sea Beast, Witchcraft
+Can Build: None
