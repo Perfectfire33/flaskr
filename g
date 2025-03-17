@@ -1,0 +1,1 @@
+intercept = 'springy od '
